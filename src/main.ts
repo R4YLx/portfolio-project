@@ -1,5 +1,5 @@
-import '@styles/global.scss'
-import { setupCounter } from '@components/counter'
+import './styles/global.scss'
+import { setupCounter } from './components/counter'
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
