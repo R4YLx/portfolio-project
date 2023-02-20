@@ -1,5 +1,5 @@
 import './styles/global.scss'
-import { setupCounter } from './components/counter'
+import Counter from './components/Counter'
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
@@ -10,4 +10,4 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   </div>
 `
 
-setupCounter(document.querySelector<HTMLButtonElement>('#counter')!)
+Counter(document.querySelector<HTMLButtonElement>('#counter')!)
