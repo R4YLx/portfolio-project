@@ -1,0 +1,63 @@
+@use '../../styles/variables.scss' as *;
+
+.HamburgerBtn {
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: inherit;
+  height: $spacing-300;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+
+  &__bars {
+    /* The middle bar */
+    width: $spacing-200;
+    height: $spacing-25;
+    background: $color-primary-dark;
+    border-radius: $spacing-25;
+    transition: all 0.3s ease-in-out;
+
+    /* Top and lower bar */
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      height: $spacing-25;
+      background: $color-primary-dark;
+      border-radius: $spacing-25;
+      transition: all 0.3s ease-in-out;
+    }
+
+    /* Position and length of top bar */
+    &::before {
+      transform: translateY(-$spacing-50);
+      width: 1rem;
+    }
+
+    /* Position and length of lower bar */
+    &::after {
+      transform: translateY($spacing-50);
+      width: $spacing-150;
+    }
+  }
+
+  /* Hamburger animation for after click on button*/
+  &[open] &__bars {
+    transform: translateX(-2.75rem);
+    background: transparent;
+    box-shadow: none;
+  }
+
+  /* Animation for top bar */
+  &[open] &__bars::before {
+    transform: rotate(45deg) translate(2rem, -2rem);
+    width: 1.5rem;
+  }
+
+  /* Animation for lower bar */
+  &[open] &__bars::after {
+    transform: rotate(-45deg) translate(2rem, 2rem);
+    width: 1.5rem;
+  }
+}

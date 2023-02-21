@@ -15,15 +15,36 @@
 }
 
 html {
-  height: 100vh;
+  height: 100svh;
+  background-color: $color-base-light;
 }
 
-body,
-#app {
+body {
   height: 100%;
 }
 
 a {
   text-decoration: none;
   color: inherit;
+}
+
+.Header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: $spacing-50 $spacing-100;
+  transition: all 400ms ease-in-out;
+
+  &__logo {
+    width: $spacing-800;
+  }
+}
+
+//* Temp only
+main {
+  display: none;
 }

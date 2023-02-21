@@ -1,13 +1,30 @@
+import renderNavMenu from './components/NavMenu'
 import './styles/global.scss'
-import Counter from './components/Counter'
+import { dqs, dqsa } from './utils/helpers'
 
-document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
-  <div>
-    <h1>Hello world</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-  </div>
-`
+const body = document.body
 
-Counter(document.querySelector<HTMLButtonElement>('#counter')!)
+const navigationEl = dqs('.navigation') as HTMLElement
+renderNavMenu(navigationEl)
+
+const hamburgerBtnEl = dqs('#hamburgerBtn') as HTMLButtonElement
+const menuEl = dqs('#menu') as HTMLUListElement
+const menuItemsEl = dqsa('[data-menu]') as NodeListOf<HTMLLIElement>
+
+//* Hides and show hamburger menu
+function hamburgerShow() {
+  hamburgerBtnEl.toggleAttribute('active')
+  menuEl.toggleAttribute('active')
+}
+
+//* Click event for hamburger button
+hamburgerBtnEl.addEventListener('click', () => {
+  hamburgerBtnEl.toggleAttribute('open')
+
+  hamburgerShow()
+
+  //* Closes hamburger menu on click on list item
+  menuItemsEl.forEach((menuItem) => {
+    menuItem.addEventListener('click', hamburgerShow)
+  })
+})
