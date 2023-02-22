@@ -1,7 +1,6 @@
 [
-  {
-    "link_id": "test",
-    "link_url": "test",
-    "link_icon": "test"
-  }
+  { "title": "Start" },
+  { "title": "About" },
+  { "title": "Skills" },
+  { "title": "Work" }
 ]

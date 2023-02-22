@@ -1,12 +1,6 @@
 import { scrollToView } from '../../utils/helpers'
+import links from '../../data/links.json'
 import styles from './NavMenu.module.scss'
-
-const links = [
-  { title: 'Start', href: '#start' },
-  { title: 'About', href: '#about' },
-  { title: 'Skills', href: '#skills' },
-  { title: 'Work', href: '#work' }
-]
 
 function NavMenu() {
   const menuEl = document.createElement('ul')
@@ -14,7 +8,7 @@ function NavMenu() {
   menuEl.id = 'menu'
 
   //* Create list of links/sections
-  links.forEach((item: { title: string; href: string }) => {
+  links.forEach((item: { title: string }) => {
     const menuItemEl = document.createElement('li')
     menuItemEl.className = styles.NavMenu__item
     menuItemEl.setAttribute('data-menu', '')
