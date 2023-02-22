@@ -1,5 +1,4 @@
 import { scrollToView } from '../../utils/helpers'
-import renderHamburger from '../Hamburger'
 import styles from './NavMenu.module.scss'
 
 const links = [
@@ -10,7 +9,7 @@ const links = [
   { title: 'Connect', href: '#connect' }
 ]
 
-function renderNavMenu(parentEl: HTMLElement) {
+function NavMenu() {
   const menuEl = document.createElement('ul')
   menuEl.className = styles.NavMenu
   menuEl.id = 'menu'
@@ -27,11 +26,9 @@ function renderNavMenu(parentEl: HTMLElement) {
     })
 
     menuEl.append(menuItemEl)
-    parentEl.append(menuEl)
   })
 
-  //* Renders hamburger menu
-  renderHamburger(parentEl)
+  return menuEl
 }
 
-export default renderNavMenu
+export default NavMenu

@@ -29,24 +29,6 @@ a {
   color: inherit;
 }
 
-.Header {
-  position: sticky;
-  top: 0;
-  width: 100%;
-  height: $spacing-450;
-  background: $color-base-light;
-
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: $spacing-50 $spacing-100;
-  transition: all 400ms ease-in-out;
-
-  &__logo {
-    width: $spacing-600;
-  }
-}
-
 section {
   height: calc(100svh - $spacing-450);
   height: calc(100vh - $spacing-450);

@@ -1,11 +1,10 @@
-import renderNavMenu from './components/NavMenu'
 import { dqs, dqsa } from './utils/helpers'
+import Header from './components/Header'
 import './styles/global.scss'
 
-const body = document.body
-
-const navigationEl = dqs('.navigation') as HTMLElement
-renderNavMenu(navigationEl)
+const body: HTMLElement = document.body
+const header: HTMLElement = Header()
+body.append(header)
 
 const hamburgerBtnEl = dqs('#hamburgerBtn') as HTMLButtonElement
 const menuEl = dqs('#menu') as HTMLUListElement

@@ -1,6 +1,6 @@
 import styles from './Hamburger.module.scss'
 
-function renderHamburger(parentEl: HTMLElement) {
+function Hamburger() {
   const hamburgerBtn = document.createElement('button')
   hamburgerBtn.id = 'hamburgerBtn'
   hamburgerBtn.className = styles.HamburgerBtn
@@ -11,7 +11,7 @@ function renderHamburger(parentEl: HTMLElement) {
 
   hamburgerBtn.append(hamburgerBars)
 
-  parentEl.append(hamburgerBtn)
+  return hamburgerBtn
 }
 
-export default renderHamburger
+export default Hamburger
