@@ -1,9 +1,9 @@
 import { dqs, dqsa } from './utils/helpers'
 import Header from './components/Header'
-import Start from './components/Sections/Start'
-import About from './components/Sections/About'
-import Skills from './components/Sections/Skills'
-import Work from './components/Sections/Work'
+import Start from './sections/Start'
+import About from './sections/About'
+import Skills from './sections/Skills'
+import Work from './sections/Work'
 import Footer from './components/Footer'
 import './styles/global.scss'
 

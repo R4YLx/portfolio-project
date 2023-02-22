@@ -1,4 +1,4 @@
-@use '../../../styles/variables.scss' as *;
+@use '../../styles/variables.scss' as *;
 
 .Start {
   display: flex;
@@ -6,9 +6,6 @@
 
   &__textWrapper {
     margin: auto;
-    display: flex;
-    flex-direction: column;
-    gap: $spacing-200;
   }
 
   &__greeting {
@@ -17,5 +14,6 @@
 
   &__intro {
     display: block;
+    margin-bottom: $spacing-200;
   }
 }
