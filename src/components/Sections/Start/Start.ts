@@ -1,12 +1,13 @@
-import styles from './Home.module.scss'
+import styles from './Start.module.scss'
 
-function Home() {
+function Start() {
   const sectionEl = document.createElement('section')
-  sectionEl.id = 'home'
+  sectionEl.id = 'start'
+  sectionEl.className = styles.Start
 
   //* Creating parallax
   const parallaxWrapperEl = document.createElement('div')
-  parallaxWrapperEl.className = styles.Home__parallaxWrapper
+  parallaxWrapperEl.className = styles.Start__parallaxWrapper
 
   //* TODO: Loop thru parallax layers
 
@@ -14,22 +15,27 @@ function Home() {
 
   //* Creating greeting headline
   const headlineContainerEl = document.createElement('div')
+  headlineContainerEl.className = styles.Start__textWrapper
   const headlineEl = document.createElement('h1')
   const spanOneEl = document.createElement('span')
   const spanTwoEl = document.createElement('span')
+  const headlinePhrase = document.createElement('h2')
 
   //* Creating headline spans
   spanOneEl.innerText = 'Chào,'
-  spanOneEl.className = styles.Home__greeting
+  spanOneEl.className = styles.Start__greeting
   spanTwoEl.innerText = 'my name is Raymond Lam.'
-  spanOneEl.className = styles.Home__phrase
+  spanOneEl.className = styles.Start__intro
+  headlinePhrase.innerText = 'I’m a Front End Developer.'
+  headlinePhrase.className = styles.Start__phrase
 
   //* Adding spans to h1
   headlineEl.append(spanOneEl)
   headlineEl.append(spanTwoEl)
 
-  //* Adding h1 to div container
+  //* Adding h1 and h2 to div container
   headlineContainerEl.append(headlineEl)
+  headlineContainerEl.append(headlinePhrase)
 
   //* Adding headline container to section element
   sectionEl.append(headlineContainerEl)
@@ -37,4 +43,4 @@ function Home() {
   return sectionEl
 }
 
-export default Home
+export default Start

@@ -2,11 +2,10 @@ import { scrollToView } from '../../utils/helpers'
 import styles from './NavMenu.module.scss'
 
 const links = [
-  { title: 'Home', href: '#home' },
+  { title: 'Start', href: '#start' },
   { title: 'About', href: '#about' },
   { title: 'Skills', href: '#skills' },
-  { title: 'Work', href: '#work' },
-  { title: 'Connect', href: '#connect' }
+  { title: 'Work', href: '#work' }
 ]
 
 function NavMenu() {
