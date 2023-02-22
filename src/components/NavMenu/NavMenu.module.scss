@@ -5,19 +5,17 @@
   inset: 0 0 0 30%;
   list-style-type: none;
   padding-top: $spacing-400;
-  background: hsla(253, 53%, 24%, 0.9);
   transform: translateX(100%);
   transition: all 0.3s ease-in-out;
 
-  @supports (backdrop-filter: blur(0.5rem)) {
-    background: hsla(253, 55%, 42%, 0.542);
-    backdrop-filter: blur(0.5rem);
-    -webkit-backdrop-filter: blur(0.5rem);
-  }
+  background: hsla(253, 55%, 42%, 0.542);
+  backdrop-filter: blur(0.5rem);
+  -webkit-backdrop-filter: blur(0.5rem);
 
   &__item {
     text-align: center;
     padding: $spacing-100;
+    cursor: pointer;
   }
 
   &__link {

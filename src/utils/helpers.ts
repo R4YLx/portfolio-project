@@ -5,3 +5,13 @@ export function dqs(el: string) {
 export function dqsa(el: string) {
   return document.querySelectorAll(el)
 }
+
+export function scrollToView(el: string) {
+  const element = dqs(`#${el}`) as HTMLElement
+
+  element.scrollIntoView({
+    behavior: 'smooth',
+    block: 'end',
+    inline: 'nearest'
+  })
+}

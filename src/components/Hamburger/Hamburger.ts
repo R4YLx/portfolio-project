@@ -7,6 +7,7 @@ function renderHamburger(parentEl: HTMLElement) {
 
   const hamburgerBars = document.createElement('div')
   hamburgerBars.className = styles.HamburgerBtn__bars
+  hamburgerBars.id = 'hamburgerBars'
 
   hamburgerBtn.append(hamburgerBars)
 

@@ -1,3 +1,4 @@
+import { scrollToView } from '../../utils/helpers'
 import renderHamburger from '../Hamburger'
 import styles from './NavMenu.module.scss'
 
@@ -15,18 +16,15 @@ function renderNavMenu(parentEl: HTMLElement) {
   menuEl.id = 'menu'
 
   //* Create list of links/sections
-  links.map((item: { title: string; href: string }) => {
+  links.forEach((item: { title: string; href: string }) => {
     const menuItemEl = document.createElement('li')
     menuItemEl.className = styles.NavMenu__item
     menuItemEl.setAttribute('data-menu', '')
+    menuItemEl.innerText = item.title
 
-    const linkEl = document.createElement('a')
-    linkEl.className = styles.NavMenu__link
-
-    menuItemEl.append(linkEl)
-
-    linkEl.innerText = item.title
-    linkEl.href = item.href
+    menuItemEl.addEventListener('click', () => {
+      return scrollToView(item.title.toLowerCase())
+    })
 
     menuEl.append(menuItemEl)
     parentEl.append(menuEl)

@@ -1,6 +1,6 @@
 import renderNavMenu from './components/NavMenu'
-import './styles/global.scss'
 import { dqs, dqsa } from './utils/helpers'
+import './styles/global.scss'
 
 const body = document.body
 
@@ -15,12 +15,11 @@ const menuItemsEl = dqsa('[data-menu]') as NodeListOf<HTMLLIElement>
 function hamburgerShow() {
   hamburgerBtnEl.toggleAttribute('active')
   menuEl.toggleAttribute('active')
+  hamburgerBtnEl.toggleAttribute('open')
 }
 
 //* Click event for hamburger button
 hamburgerBtnEl.addEventListener('click', () => {
-  hamburgerBtnEl.toggleAttribute('open')
-
   hamburgerShow()
 
   //* Closes hamburger menu on click on list item

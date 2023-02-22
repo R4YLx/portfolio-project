@@ -15,12 +15,13 @@
 }
 
 html {
-  height: 100svh;
-  background-color: $color-base-light;
+  background-color: $color-base-dark;
+  color: $color-base-light;
 }
 
 body {
-  height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }
 
 a {
@@ -29,9 +30,11 @@ a {
 }
 
 .Header {
-  position: fixed;
+  position: sticky;
   top: 0;
   width: 100%;
+  height: $spacing-450;
+  background: $color-base-light;
 
   display: flex;
   flex-wrap: wrap;
@@ -40,11 +43,11 @@ a {
   transition: all 400ms ease-in-out;
 
   &__logo {
-    width: $spacing-800;
+    width: $spacing-600;
   }
 }
 
-//* Temp only
-main {
-  display: none;
+section {
+  height: calc(100svh - $spacing-450);
+  height: calc(100vh - $spacing-450);
 }
