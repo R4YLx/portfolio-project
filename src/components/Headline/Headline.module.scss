@@ -1,0 +1,23 @@
+.Headline {
+  &_size {
+    &_xl {
+      // @include typography.headline-xl();
+      color: red;
+    }
+
+    &_lg {
+      // @include typography.headline-lg();
+      color: blue;
+    }
+
+    &_md {
+      // @include typography.headline-md();
+      color: green;
+    }
+
+    &_sm {
+      // @include typography.headline-sm();
+      color: yellow;
+    }
+  }
+}
