@@ -1,4 +1,21 @@
+@use '../../../styles/variables.scss' as *;
+
 .Start {
-  &__parallaxWrapper {
+  display: flex;
+  align-items: center;
+
+  &__textWrapper {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-200;
+  }
+
+  &__greeting {
+    display: block;
+  }
+
+  &__intro {
+    display: block;
   }
 }

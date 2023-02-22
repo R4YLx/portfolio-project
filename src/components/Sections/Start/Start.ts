@@ -1,3 +1,4 @@
+import Parallax from '../../Parallax'
 import styles from './Start.module.scss'
 
 function Start() {
@@ -6,12 +7,7 @@ function Start() {
   sectionEl.className = styles.Start
 
   //* Creating parallax
-  const parallaxWrapperEl = document.createElement('div')
-  parallaxWrapperEl.className = styles.Start__parallaxWrapper
-
-  //* TODO: Loop thru parallax layers
-
-  sectionEl.append(parallaxWrapperEl)
+  sectionEl.append(Parallax())
 
   //* Creating greeting headline
   const headlineContainerEl = document.createElement('div')
@@ -25,7 +21,7 @@ function Start() {
   spanOneEl.innerText = 'Chào,'
   spanOneEl.className = styles.Start__greeting
   spanTwoEl.innerText = 'my name is Raymond Lam.'
-  spanOneEl.className = styles.Start__intro
+  spanTwoEl.className = styles.Start__intro
   headlinePhrase.innerText = 'I’m a Front End Developer.'
   headlinePhrase.className = styles.Start__phrase
 
