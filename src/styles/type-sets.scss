@@ -62,10 +62,10 @@
 }
 
 @mixin body-md {
-  font-size: $font-size-50;
-  font-weight: $font-weight-regular;
-  line-height: $line-height-100;
-  letter-spacing: $letter-spacing-50;
+  font-size: $font-size-200;
+  font-weight: $font-weight-light;
+  line-height: $line-height-300;
+  letter-spacing: $letter-spacing-300;
 
   @media screen and (min-width: $breakpoint-md) {
   }

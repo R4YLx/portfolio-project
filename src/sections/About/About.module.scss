@@ -1,2 +1,36 @@
+@use '../../styles/variables.scss' as *;
+@use '../../styles/type-sets.scss' as *;
+
 .About {
+  background-color: $color-primary-dark;
+
+  &__wrapper {
+    padding: $spacing-100;
+  }
+
+  &__headline {
+    @include headline-md();
+  }
+
+  &__contentWrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__imgContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  &__img {
+    max-width: $spacing-1100;
+    border-radius: 50%;
+  }
+
+  &__paragraph {
+    @include body-md();
+    margin-block: $spacing-100;
+  }
 }

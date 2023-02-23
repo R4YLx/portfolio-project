@@ -4,7 +4,7 @@ import styles from './Start.module.scss'
 function Start() {
   const sectionEl = document.createElement('section')
   sectionEl.id = 'start'
-  sectionEl.className = styles.Start
+  // sectionEl.className = styles.Start
 
   //* Creating parallax
   sectionEl.append(Parallax())

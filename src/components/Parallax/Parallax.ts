@@ -2,6 +2,7 @@ import styles from './Parallax.module.scss'
 
 function Parallax() {
   const parallaxWrapperEl = document.createElement('div')
+  parallaxWrapperEl.id = 'parallax'
   // parallaxWrapperEl.className = styles.Parallax
 
   //* Creating five divs for parallax layers
