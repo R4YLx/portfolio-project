@@ -1,2 +1,12 @@
+@use '../../styles/variables.scss' as *;
+@use '../../styles/type-sets.scss' as *;
+
 .Work {
+  &__wrapper {
+    padding: $spacing-100;
+  }
+
+  &__headline {
+    @include headline-md();
+  }
 }
