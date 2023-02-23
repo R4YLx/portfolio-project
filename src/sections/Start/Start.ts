@@ -1,6 +1,4 @@
-import Headline from '../../components/Headline'
 import Parallax from '../../components/Parallax'
-import Text from '../../components/Text'
 import styles from './Start.module.scss'
 
 function Start() {
@@ -15,9 +13,9 @@ function Start() {
   const headlineContainerEl = document.createElement('div')
   headlineContainerEl.className = styles.Start__textWrapper
   const headlineEl = document.createElement('h1')
-  const headlineGreet = Text({ element: 'span', size: 'xl' })
-  const headlineName = Text({ element: 'span', size: 'lg' })
-  const headlinePhrase = Headline({ element: 'h2', size: 'md' })
+  const headlineGreet = document.createElement('span')
+  const headlineName = document.createElement('span')
+  const headlinePhrase = document.createElement('h2')
 
   //* Creating headline spans
   headlineGreet.innerText = 'Chào,'

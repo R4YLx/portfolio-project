@@ -17,11 +17,8 @@ function Header(): HTMLElement {
   //* Adding logo to header
   headerEl.append(logoImg)
 
-  const navEl = NavMenu()
-  headerEl.append(navEl)
-
-  const hamburgeEl = Hamburger()
-  headerEl.append(hamburgeEl)
+  headerEl.append(NavMenu())
+  headerEl.append(Hamburger())
 
   return headerEl
 }

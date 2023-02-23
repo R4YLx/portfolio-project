@@ -1,4 +1,3 @@
-import Headline from '../../components/Headline'
 import styles from './About.module.scss'
 
 function About() {
@@ -6,7 +5,7 @@ function About() {
   sectionEl.id = 'about'
   sectionEl.className = styles.About
 
-  const headline = Headline({ element: 'h3', size: 'xl' })
+  const headline = document.createElement('h3')
   headline.innerText = 'About'
   sectionEl.append(headline)
 

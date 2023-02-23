@@ -1,0 +1,82 @@
+@use './variables.scss' as *;
+
+// Mixins for headline text
+@mixin headline-lg {
+  font-size: $font-size-1000;
+  font-weight: $font-weight-extralight;
+  line-height: $line-height-75;
+  letter-spacing: $letter-spacing-100;
+
+  @media screen and (min-width: $breakpoint-md) {
+  }
+
+  @media screen and (min-width: $breakpoint-lg) {
+  }
+}
+
+@mixin headline-md {
+  font-size: $font-size-400;
+  font-weight: $font-weight-light;
+  line-height: $line-height-100;
+  letter-spacing: $letter-spacing-100;
+
+  @media screen and (min-width: $breakpoint-md) {
+  }
+
+  @media screen and (min-width: $breakpoint-lg) {
+  }
+}
+
+@mixin headline-sm {
+  font-size: $font-size-200;
+  font-weight: $font-weight-light;
+  line-height: $line-height-100;
+  letter-spacing: $letter-spacing-100;
+
+  @media screen and (min-width: $breakpoint-md) {
+  }
+
+  @media screen and (min-width: $breakpoint-lg) {
+  }
+}
+
+// Mixins for body text
+@mixin body-xl {
+  font-size: $font-size-1200;
+  font-weight: $font-weight-extralight;
+  line-height: $line-height-75;
+  letter-spacing: $letter-spacing-100;
+
+  @media screen and (min-width: $breakpoint-md) {
+  }
+}
+
+@mixin body-lg {
+  font-size: $font-size-1100;
+  font-weight: $font-weight-extralight;
+  line-height: $line-height-75;
+  letter-spacing: $letter-spacing-100;
+
+  @media screen and (min-width: $breakpoint-md) {
+  }
+}
+
+@mixin body-md {
+  font-size: $font-size-50;
+  font-weight: $font-weight-regular;
+  line-height: $line-height-100;
+  letter-spacing: $letter-spacing-50;
+
+  @media screen and (min-width: $breakpoint-md) {
+  }
+}
+
+@mixin body-sm {
+  font-size: $font-size-25;
+  font-weight: $font-weight-regular;
+  line-height: $line-height-200;
+  letter-spacing: $letter-spacing-75;
+
+  @media screen and (min-width: $breakpoint-md) {
+  }
+}

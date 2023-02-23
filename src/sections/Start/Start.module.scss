@@ -1,19 +1,24 @@
 @use '../../styles/variables.scss' as *;
+@use '../../styles/type-sets.scss' as *;
 
 .Start {
-  display: flex;
-  align-items: center;
-
   &__textWrapper {
-    margin: auto;
+    padding-top: $spacing-500;
+    margin-inline: $spacing-100;
   }
 
   &__greeting {
+    @include body-xl();
     display: block;
   }
 
   &__intro {
+    @include body-lg();
     display: block;
     margin-bottom: $spacing-200;
+  }
+
+  &__phrase {
+    @include headline-lg();
   }
 }

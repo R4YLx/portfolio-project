@@ -1,4 +1,3 @@
-import Headline from '../../components/Headline'
 import styles from './Work.module.scss'
 
 function Work() {
@@ -6,7 +5,7 @@ function Work() {
   sectionEl.id = 'work'
   sectionEl.className = styles.Work
 
-  const headline = Headline({ element: 'h3', size: 'md' })
+  const headline = document.createElement('h3')
   headline.innerText = 'Work'
   sectionEl.append(headline)
 
