@@ -42,6 +42,11 @@ li {
   padding: 0;
 }
 
+i {
+  font-family: $font-family-fa;
+  font-style: normal;
+}
+
 section {
   min-height: calc(100svh - $spacing-450);
   min-height: calc(100vh - $spacing-450);

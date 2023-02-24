@@ -2,11 +2,11 @@
   {
     "social_id": "github",
     "social_url": "https://github.com/R4YLx/",
-    "social_icon": "./icons/github-icon.svg"
+    "social_icon": "fa-brands fa-github"
   },
   {
     "social_id": "linkedin",
     "social_url": "https://www.linkedin.com/in/raymondlam-dev/",
-    "social_icon": "./icons/linkedin-icon.svg"
+    "social_icon": "fa-brands fa-linkedin"
   }
 ]

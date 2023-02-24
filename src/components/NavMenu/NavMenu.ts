@@ -38,11 +38,9 @@ function NavMenu() {
     anchorEl.href = social.social_url
     socialItem.append(anchorEl)
 
-    const socialImgEl = document.createElement('img')
-    socialImgEl.className = styles.NavMenu__icon
-    socialImgEl.src = social.social_icon
-    socialImgEl.alt = social.social_id
-    anchorEl.append(socialImgEl)
+    const iconEl = document.createElement('i')
+    iconEl.className = `${social.social_icon} ${styles.NavMenu__icon}`
+    anchorEl.append(iconEl)
 
     socialsWrapperEl.append(socialItem)
   })
