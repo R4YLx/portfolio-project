@@ -26,4 +26,94 @@
   &__headline {
     @include headline-md();
   }
+
+  &__contentWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: $spacing-400;
+    margin-top: $spacing-200;
+  }
+
+  &__subHeadline {
+    @include body-md();
+  }
+
+  &__badgeWrapper {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: $spacing-200;
+  }
+
+  &__badge {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: $spacing-600;
+    height: $spacing-600;
+    border-radius: $spacing-75;
+    box-shadow: 8px 10px 12px 3px rgba(0, 0, 0, 0.43);
+
+    &_html {
+      background: $color-badge-html;
+      color: $color-badge-html;
+    }
+
+    &_css {
+      background: $color-badge-css;
+      color: $color-badge-css;
+    }
+
+    &_javascript {
+      background: $color-badge-js;
+      color: $color-badge-js;
+    }
+
+    &_sass {
+      background: $color-badge-sass;
+      color: $color-badge-sass;
+    }
+
+    &_bootstrap {
+      background: $color-badge-bs;
+      color: $color-badge-bs;
+    }
+
+    &_react {
+      background: $color-badge-react;
+      color: $color-badge-react;
+    }
+
+    &_nodejs {
+      background: $color-badge-node;
+      color: $color-badge-node;
+    }
+
+    &_git {
+      background: $color-badge-git;
+      color: $color-badge-git;
+    }
+
+    &_figma {
+      background: $color-badge-figma;
+      color: $color-badge-figma;
+    }
+  }
+
+  &__rounded {
+    width: $spacing-450;
+    height: $spacing-450;
+    background: $color-base-light;
+    border-radius: $spacing-125;
+    box-shadow: 8px 8px 8px 2px rgba(0, 0, 0, 0.23);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__icon {
+    font-size: $spacing-250;
+  }
 }

@@ -3,6 +3,7 @@
 
 .Work {
   position: relative;
+  z-index: -1;
 
   &__wave {
     background-image: url(../../assets/waves/sm/work-wave.svg);

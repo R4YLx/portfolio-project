@@ -15,6 +15,7 @@
   &__contentWrapper {
     display: flex;
     flex-direction: column;
+    margin-top: $spacing-200;
   }
 
   &__imgContainer {
@@ -22,6 +23,7 @@
     justify-content: center;
     align-items: center;
     padding: 1rem;
+    margin-bottom: $spacing-100;
   }
 
   &__img {

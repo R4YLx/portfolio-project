@@ -11,7 +11,7 @@ interface ISocial {
 interface ISkill {
   skill_id: string
   skill_name: string
-  skill_img: string
+  skill_icon: string
 }
 
 interface IProject {

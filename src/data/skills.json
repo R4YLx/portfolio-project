@@ -1,7 +1,47 @@
 [
   {
-    "skill_id": "test",
-    "skill_name": "test",
-    "skill_img": "test"
+    "skill_id": "html",
+    "skill_name": "HTML",
+    "skill_icon": "fa-brands fa-html5"
+  },
+  {
+    "skill_id": "css",
+    "skill_name": "CSS",
+    "skill_icon": "fa-brands fa-css3-alt"
+  },
+  {
+    "skill_id": "javascript",
+    "skill_name": "JavaScript",
+    "skill_icon": "fa-brands fa-js"
+  },
+  {
+    "skill_id": "sass",
+    "skill_name": "SASS",
+    "skill_icon": "fa-brands fa-sass"
+  },
+  {
+    "skill_id": "bootstrap",
+    "skill_name": "Bootstrap",
+    "skill_icon": "fa-brands fa-bootstrap"
+  },
+  {
+    "skill_id": "react",
+    "skill_name": "React",
+    "skill_icon": "fa-brands fa-react"
+  },
+  {
+    "skill_id": "nodejs",
+    "skill_name": "Node.JS",
+    "skill_icon": "fa-brands fa-node"
+  },
+  {
+    "skill_id": "git",
+    "skill_name": "Git",
+    "skill_icon": "fa-brands fa-git"
+  },
+  {
+    "skill_id": "figma",
+    "skill_name": "Figma",
+    "skill_icon": "fa-brands fa-figma"
   }
 ]
