@@ -19,4 +19,5 @@ interface IProject {
   project_title: string
   project_img: string
   project_link: string
+  project_deploy: string
 }

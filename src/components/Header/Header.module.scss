@@ -6,12 +6,15 @@
   width: 100%;
   height: $spacing-450;
   background: $color-base-light;
+  z-index: 2;
 
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   padding: $spacing-50 $spacing-100;
   transition: all 400ms ease-in-out;
+
+  box-shadow: 0 2px 25px rgba(117, 117, 117, 0.609);
 
   &__logo {
     width: $spacing-600;

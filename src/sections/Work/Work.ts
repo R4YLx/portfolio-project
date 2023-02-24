@@ -1,4 +1,8 @@
+import Card from '../../components/Card'
+import _projects from '../../data/projects.json'
 import styles from './Work.module.scss'
+
+const projects: IProject[] = _projects
 
 function Work() {
   const sectionEl = document.createElement('section')
@@ -17,6 +21,14 @@ function Work() {
   headline.className = styles.Work__headline
   headline.innerText = 'Work'
   wrapperEl.append(headline)
+
+  const contentWrapperEl = document.createElement('div')
+  contentWrapperEl.className = styles.Work__contentWrapper
+  wrapperEl.append(contentWrapperEl)
+
+  projects.forEach((project: IProject) => {
+    contentWrapperEl.append(Card(project))
+  })
 
   return sectionEl
 }

@@ -1,0 +1,83 @@
+@use '../../styles/variables.scss' as *;
+@use '../../styles/type-sets.scss' as *;
+
+.Card {
+  z-index: 1;
+
+  backdrop-filter: blur($spacing-100) saturate(180%);
+  -webkit-backdrop-filter: blur($spacing-100) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.25);
+  border-radius: $spacing-75;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  padding: $spacing-100;
+  filter: drop-shadow(0 30px 10px rgba(0, 0, 0, 0.125));
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: $spacing-100;
+
+  &__image {
+    width: 100%;
+    object-fit: cover;
+    margin-top: $spacing-100;
+  }
+
+  &__headline {
+    @include headline-sm();
+    font-weight: $font-weight-semibold;
+    margin-block: $spacing-100;
+  }
+
+  &__buttonWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-125;
+    margin-bottom: $spacing-100;
+  }
+
+  &__button,
+  %button {
+    @include body-xs();
+    font-weight: $font-weight-light;
+
+    padding: 12px 24px;
+    border-radius: 24px;
+    letter-spacing: 2px;
+
+    &_outline {
+      @extend %button;
+
+      background: transparent;
+      color: $color-secondary-dark;
+      border: 1px solid $color-secondary-dark;
+      transition: all 0.3s ease;
+
+      &:hover {
+        transform: scale(1.125);
+        color: $color-secondary-light;
+        border-color: $color-secondary-light;
+        transition: all 0.3s ease;
+      }
+    }
+
+    &_fill {
+      @extend %button;
+
+      background: $color-secondary-dark;
+      color: $color-base-light;
+      filter: drop-shadow(0);
+      font-weight: bold;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background: $color-secondary-light;
+        transform: scale(1.125);
+        filter: drop-shadow(0 10px 5px rgba(0, 0, 0, 0.125));
+        transition: all 0.3s ease;
+      }
+    }
+  }
+}

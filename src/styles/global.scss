@@ -47,6 +47,10 @@ i {
   font-style: normal;
 }
 
+#main {
+  z-index: 1;
+}
+
 section {
   min-height: calc(100svh - $spacing-450);
   min-height: calc(100vh - $spacing-450);

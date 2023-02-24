@@ -26,4 +26,11 @@
   &__headline {
     @include headline-md();
   }
+
+  &__contentWrapper {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: $spacing-200;
+    margin-block: $spacing-200;
+  }
 }

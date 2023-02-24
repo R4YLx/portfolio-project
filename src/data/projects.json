@@ -1,8 +1,58 @@
 [
   {
-    "project_id": "test",
-    "project_title": "test",
-    "project_img": "test",
-    "project_link": "test"
+    "project_id": "loftet",
+    "project_title": "Loftet",
+    "project_img": "./images/loftet.png",
+    "project_link": "https://github.com/R4YLx/loftet",
+    "project_deploy": "https://loftet.vercel.app/"
+  },
+  {
+    "project_id": "pokedexes",
+    "project_title": "Pokedexes",
+    "project_img": "./images/pokedex.png",
+    "project_link": "https://github.com/R4YLx/Pokedexes",
+    "project_deploy": "https://r4yl-react-pokedex.netlify.app/"
+  },
+  {
+    "project_id": "samsta-haken",
+    "project_title": "Sämsta Haken",
+    "project_img": "./images/samsta-haken.png",
+    "project_link": "https://github.com/R4YLx/samsta-haken",
+    "project_deploy": "https://samsta-haken.netlify.app/"
+  },
+  {
+    "project_id": "popcorn",
+    "project_title": "Popcorn Time",
+    "project_img": "./images/popcorn.png",
+    "project_link": "https://github.com/R4YLx/tmdb-react-ts",
+    "project_deploy": "tmdb-popcorn-time.netlify.app/"
+  },
+  {
+    "project_id": "mcu-db",
+    "project_title": "MCU DB",
+    "project_img": "./images/mcu.png",
+    "project_link": "https://github.com/R4YLx/mcu-db",
+    "project_deploy": "https://mcu-db.netlify.app/"
+  },
+  {
+    "project_id": "battleship",
+    "project_title": "Battleship",
+    "project_img": "./images/battleship.png",
+    "project_link": "https://github.com/R4YLx/battleships-client",
+    "project_deploy": "https://8bit-battleship.netlify.app/"
+  },
+  {
+    "project_id": "star-wars",
+    "project_title": "Star Wars Wiki",
+    "project_img": "./images/star-wars.png",
+    "project_link": "https://github.com/R4YLx/star-wars-wiki",
+    "project_deploy": "https://swapi-wiki.netlify.app/"
+  },
+  {
+    "project_id": "ktv",
+    "project_title": "Kill The Virus",
+    "project_img": "./images/ktv.png",
+    "project_link": "https://github.com/R4YLx/ktv",
+    "project_deploy": "https://kill-the-virus-jrs.herokuapp.com/"
   }
 ]
