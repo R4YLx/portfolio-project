@@ -5,6 +5,10 @@ function Work() {
   sectionEl.id = 'work'
   sectionEl.className = styles.Work
 
+  const waveEl = document.createElement('div')
+  waveEl.className = styles.Work__wave
+  sectionEl.append(waveEl)
+
   const wrapperEl = document.createElement('article')
   wrapperEl.className = styles.Work__wrapper
   sectionEl.append(wrapperEl)
