@@ -31,6 +31,10 @@
     border-radius: 50%;
   }
 
+  &__textWrapper {
+    margin-bottom: $spacing-200;
+  }
+
   &__paragraph {
     @include body-md();
     margin-block: $spacing-100;

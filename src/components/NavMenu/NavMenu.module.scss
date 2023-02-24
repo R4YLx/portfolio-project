@@ -1,4 +1,5 @@
 @use '../../styles/variables.scss' as *;
+@use '../../styles/type-sets.scss' as *;
 
 .NavMenu {
   position: fixed;
@@ -20,6 +21,7 @@
   }
 
   &__links {
+    @include body-sm();
     text-align: center;
     padding: $spacing-100;
     cursor: pointer;

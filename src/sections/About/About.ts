@@ -29,7 +29,7 @@ function About() {
   imgContainerEl.append(imgEl)
 
   const textWrapper = document.createElement('div')
-  // textWrapper.className = styles.About__textWrapper
+  textWrapper.className = styles.About__textWrapper
   contentWrapperEl.append(textWrapper)
 
   const paraOne = document.createElement('p')
