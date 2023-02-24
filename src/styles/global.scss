@@ -30,6 +30,6 @@ a {
 }
 
 section {
-  height: calc(100svh - $spacing-450);
-  height: calc(100vh - $spacing-450);
+  min-height: calc(100svh - $spacing-450);
+  min-height: calc(100vh - $spacing-450);
 }

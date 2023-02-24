@@ -1,7 +1,12 @@
 [
   {
-    "social_id": "test",
-    "social_url": "test",
-    "social_icon": "test"
+    "social_id": "github",
+    "social_url": "https://github.com/R4YLx/",
+    "social_icon": "./icons/github-icon.svg"
+  },
+  {
+    "social_id": "linkedin",
+    "social_url": "https://www.linkedin.com/in/raymondlam-dev/",
+    "social_icon": "./icons/linkedin-icon.svg"
   }
 ]

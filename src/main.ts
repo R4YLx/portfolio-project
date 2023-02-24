@@ -4,7 +4,6 @@ import Start from './sections/Start'
 import About from './sections/About'
 import Skills from './sections/Skills'
 import Work from './sections/Work'
-import Footer from './components/Footer'
 import './styles/global.scss'
 
 const body: HTMLElement = document.body
@@ -20,7 +19,6 @@ mainEl.append(Start())
 mainEl.append(About())
 mainEl.append(Skills())
 mainEl.append(Work())
-body.append(Footer())
 
 //* Querying for menu elements
 const hamburgerBtnEl = dqs('#hamburgerBtn') as HTMLButtonElement
