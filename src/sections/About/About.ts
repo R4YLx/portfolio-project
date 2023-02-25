@@ -33,7 +33,7 @@ function About() {
   contentWrapperEl.append(textWrapper)
 
   const paraOne = document.createElement('p')
-  paraOne.className = styles.About__paragraph
+  paraOne.className = styles.About__greeting
   paraOne.innerText = 'Hello there friends and strangers!'
   textWrapper.append(paraOne)
 

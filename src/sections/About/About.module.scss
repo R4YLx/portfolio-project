@@ -35,6 +35,12 @@
     margin-bottom: $spacing-200;
   }
 
+  &__greeting {
+    @include headline-sm();
+    font-weight: $font-weight-regular;
+    margin-block: $spacing-100;
+  }
+
   &__paragraph {
     @include body-md();
     margin-block: $spacing-100;

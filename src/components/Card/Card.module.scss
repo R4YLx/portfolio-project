@@ -27,7 +27,6 @@
 
   &__headline {
     @include headline-sm();
-    font-weight: $font-weight-semibold;
     margin-block: $spacing-100;
   }
 
@@ -43,9 +42,8 @@
     @include body-xs();
     font-weight: $font-weight-light;
 
-    padding: 12px 24px;
-    border-radius: 24px;
-    letter-spacing: 2px;
+    padding: $spacing-75 $spacing-150;
+    border-radius: $spacing-150;
 
     &_outline {
       @extend %button;

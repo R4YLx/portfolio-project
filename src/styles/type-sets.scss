@@ -15,7 +15,7 @@
 }
 
 @mixin headline-md {
-  font-size: $font-size-400;
+  font-size: $font-size-700;
   font-weight: $font-weight-light;
   line-height: $line-height-100;
   letter-spacing: $letter-spacing-100;
@@ -28,8 +28,8 @@
 }
 
 @mixin headline-sm {
-  font-size: $font-size-200;
-  font-weight: $font-weight-light;
+  font-size: $font-size-400;
+  font-weight: $font-weight-semibold;
   line-height: $line-height-100;
   letter-spacing: $letter-spacing-100;
 
@@ -72,7 +72,7 @@
 }
 
 @mixin body-sm {
-  font-size: $font-size-100;
+  font-size: $font-size-200;
   font-weight: $font-weight-medium;
   line-height: $line-height-200;
   letter-spacing: $letter-spacing-400;
@@ -82,10 +82,10 @@
 }
 
 @mixin body-xs {
-  font-size: $font-size-75;
+  font-size: $font-size-100;
   font-weight: $font-weight-light;
   line-height: $line-height-200;
-  letter-spacing: $letter-spacing-400;
+  letter-spacing: $letter-spacing-200;
 
   @media screen and (min-width: $breakpoint-md) {
   }
