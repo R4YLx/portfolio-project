@@ -11,7 +11,7 @@ export function scrollToView(el: string) {
 
   element.scrollIntoView({
     behavior: 'smooth',
-    block: 'end',
-    inline: 'nearest'
+    block: 'start',
+    inline: 'start'
   })
 }

@@ -2,6 +2,9 @@
 @use '../../styles/type-sets.scss' as *;
 
 .Start {
+  min-height: calc(100svh - $spacing-450);
+  min-height: calc(100vh - $spacing-450);
+
   &__textWrapper {
     padding-top: $spacing-500;
     margin-inline: $spacing-100;

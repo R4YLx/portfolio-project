@@ -13,7 +13,13 @@
 }
 
 html {
-  background-color: $color-base-dark;
+  background: rgb(57, 38, 147);
+  background: linear-gradient(
+    8deg,
+    rgba(57, 38, 147, 1) 0%,
+    rgba(26, 26, 26, 1) 57%
+  );
+  // background-color: $color-base-dark;
   color: $color-base-light;
 }
 
@@ -49,9 +55,4 @@ i {
 
 #main {
   z-index: 1;
-}
-
-section {
-  min-height: calc(100svh - $spacing-450);
-  min-height: calc(100vh - $spacing-450);
 }
