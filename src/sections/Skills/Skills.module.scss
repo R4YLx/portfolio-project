@@ -7,7 +7,7 @@
   z-index: -1;
 
   &__wave {
-    background-image: url(../../assets/waves/sm/skills-wave.svg);
+    background-image: url(../../assets/waves/xs/skills-wave.svg);
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
@@ -18,6 +18,22 @@
     left: 0;
     right: 0;
     z-index: -2;
+
+    @media screen and (min-width: $breakpoint-sm) {
+      background-image: url(../../assets/waves/sm/skills-wave.svg);
+    }
+
+    @media screen and (min-width: $breakpoint-md) {
+      background-image: url(../../assets/waves/md/skills-wave.svg);
+    }
+
+    @media screen and (min-width: $breakpoint-lg) {
+      background-image: url(../../assets/waves/lg/skills-wave.svg);
+    }
+
+    @media screen and (min-width: $breakpoint-xl) {
+      background-image: url(../../assets/waves/xl/skills-wave.svg);
+    }
   }
 
   &__wrapper {

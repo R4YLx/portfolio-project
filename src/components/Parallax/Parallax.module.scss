@@ -12,7 +12,11 @@
     z-index: -100;
 
     &[data-parallax='layer1'] {
-      background-image: url(../../assets/parallax/sm/layered-waves-purples-1.svg);
+      background-image: url(../../assets/parallax/xs/layered-waves-purples-1.svg);
+
+      @media screen and (min-width: $breakpoint-sm) {
+        background-image: url(../../assets/parallax/sm/layered-waves-purples-1.svg);
+      }
 
       @media screen and (min-width: $breakpoint-md) {
         background-image: url(../../assets/parallax/md/layered-waves-purples-1.svg);
@@ -21,10 +25,22 @@
       @media screen and (min-width: $breakpoint-lg) {
         background-image: url(../../assets/parallax/lg/layered-waves-purples-1.svg);
       }
+
+      @media screen and (min-width: $breakpoint-xl) {
+        background-image: url(../../assets/parallax/xl/layered-waves-purples-1.svg);
+      }
+
+      @media screen and (min-width: $breakpoint-xxl) {
+        background-image: url(../../assets/parallax/xxl/layered-waves-purples-1.svg);
+      }
     }
 
     &[data-parallax='layer2'] {
-      background-image: url(../../assets/parallax/sm/layered-waves-purples-2.svg);
+      background-image: url(../../assets/parallax/xs/layered-waves-purples-2.svg);
+
+      @media screen and (min-width: $breakpoint-sm) {
+        background-image: url(../../assets/parallax/sm/layered-waves-purples-2.svg);
+      }
 
       @media screen and (min-width: $breakpoint-md) {
         background-image: url(../../assets/parallax/md/layered-waves-purples-2.svg);
@@ -33,10 +49,22 @@
       @media screen and (min-width: $breakpoint-lg) {
         background-image: url(../../assets/parallax/lg/layered-waves-purples-2.svg);
       }
+
+      @media screen and (min-width: $breakpoint-xl) {
+        background-image: url(../../assets/parallax/xl/layered-waves-purples-2.svg);
+      }
+
+      @media screen and (min-width: $breakpoint-xxl) {
+        background-image: url(../../assets/parallax/xxl/layered-waves-purples-2.svg);
+      }
     }
 
     &[data-parallax='layer3'] {
-      background-image: url(../../assets/parallax/sm/layered-waves-purples-3.svg);
+      background-image: url(../../assets/parallax/xs/layered-waves-purples-3.svg);
+
+      @media screen and (min-width: $breakpoint-sm) {
+        background-image: url(../../assets/parallax/sm/layered-waves-purples-3.svg);
+      }
 
       @media screen and (min-width: $breakpoint-md) {
         background-image: url(../../assets/parallax/md/layered-waves-purples-3.svg);
@@ -45,10 +73,22 @@
       @media screen and (min-width: $breakpoint-lg) {
         background-image: url(../../assets/parallax/lg/layered-waves-purples-3.svg);
       }
+
+      @media screen and (min-width: $breakpoint-xl) {
+        background-image: url(../../assets/parallax/xl/layered-waves-purples-3.svg);
+      }
+
+      @media screen and (min-width: $breakpoint-xxl) {
+        background-image: url(../../assets/parallax/xxl/layered-waves-purples-3.svg);
+      }
     }
 
     &[data-parallax='layer4'] {
-      background-image: url(../../assets/parallax/sm/layered-waves-purples-4.svg);
+      background-image: url(../../assets/parallax/xs/layered-waves-purples-4.svg);
+
+      @media screen and (min-width: $breakpoint-sm) {
+        background-image: url(../../assets/parallax/sm/layered-waves-purples-4.svg);
+      }
 
       @media screen and (min-width: $breakpoint-md) {
         background-image: url(../../assets/parallax/md/layered-waves-purples-4.svg);
@@ -57,10 +97,22 @@
       @media screen and (min-width: $breakpoint-lg) {
         background-image: url(../../assets/parallax/lg/layered-waves-purples-4.svg);
       }
+
+      @media screen and (min-width: $breakpoint-xl) {
+        background-image: url(../../assets/parallax/xl/layered-waves-purples-4.svg);
+      }
+
+      @media screen and (min-width: $breakpoint-xxl) {
+        background-image: url(../../assets/parallax/xxl/layered-waves-purples-4.svg);
+      }
     }
 
     &[data-parallax='layer5'] {
-      background-image: url(../../assets/parallax/sm/layered-waves-purples-5.svg);
+      background-image: url(../../assets/parallax/xs/layered-waves-purples-5.svg);
+
+      @media screen and (min-width: $breakpoint-sm) {
+        background-image: url(../../assets/parallax/sm/layered-waves-purples-5.svg);
+      }
 
       @media screen and (min-width: $breakpoint-md) {
         background-image: url(../../assets/parallax/md/layered-waves-purples-5.svg);
@@ -68,6 +120,14 @@
 
       @media screen and (min-width: $breakpoint-lg) {
         background-image: url(../../assets/parallax/lg/layered-waves-purples-5.svg);
+      }
+
+      @media screen and (min-width: $breakpoint-xl) {
+        background-image: url(../../assets/parallax/xl/layered-waves-purples-5.svg);
+      }
+
+      @media screen and (min-width: $breakpoint-xxl) {
+        background-image: url(../../assets/parallax/xxl/layered-waves-purples-5.svg);
       }
     }
   }
