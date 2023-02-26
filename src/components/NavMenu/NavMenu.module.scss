@@ -46,6 +46,12 @@
     text-align: center;
     padding: $spacing-100;
     cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+      color: $color-secondary-dark;
+      transition: all 0.3s ease;
+    }
   }
 
   &__socialsWrapper {
@@ -65,5 +71,11 @@
 
   &__icon {
     font-size: $spacing-150;
+    transition: all 0.3s ease;
+
+    &:hover {
+      color: $color-secondary-dark;
+      transition: all 0.3s ease;
+    }
   }
 }
