@@ -1,13 +1,18 @@
 @use '../../styles/variables.scss' as *;
 @use '../../styles/type-sets.scss' as *;
+@use '../../styles/margin.scss' as *;
 
 .Start {
   min-height: calc(100svh - $spacing-450);
   min-height: calc(100vh - $spacing-450);
 
   &__textWrapper {
+    @include page-margin();
     padding-top: $spacing-500;
-    margin-inline: $spacing-100;
+
+    @media screen and (min-width: $breakpoint-md) {
+      padding-top: $spacing-1400;
+    }
   }
 
   &__greeting {

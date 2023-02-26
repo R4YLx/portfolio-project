@@ -1,5 +1,6 @@
 @use '../../styles/variables.scss' as *;
 @use '../../styles/type-sets.scss' as *;
+@use '../../styles/margin.scss' as *;
 
 .Work {
   position: relative;
@@ -20,6 +21,7 @@
   }
 
   &__wrapper {
+    @include page-margin();
     padding: $spacing-100;
   }
 
@@ -33,5 +35,9 @@
     gap: $spacing-200;
     margin-top: $spacing-200;
     margin-bottom: $spacing-400;
+
+    @media screen and (min-width: $breakpoint-md) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
   }
 }

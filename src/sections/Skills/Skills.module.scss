@@ -1,5 +1,6 @@
 @use '../../styles/variables.scss' as *;
 @use '../../styles/type-sets.scss' as *;
+@use '../../styles/margin.scss' as *;
 
 .Skills {
   position: relative;
@@ -20,6 +21,7 @@
   }
 
   &__wrapper {
+    @include page-margin();
     padding: $spacing-100;
   }
 

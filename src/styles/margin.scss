@@ -1,0 +1,10 @@
+@use './variables.scss' as *;
+
+@mixin page-margin {
+  margin-inline: $spacing-100;
+
+  @media screen and (min-width: $breakpoint-md) {
+    margin-inline: $spacing-600;
+    padding-inline: 0;
+  }
+}

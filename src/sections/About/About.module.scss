@@ -1,10 +1,12 @@
 @use '../../styles/variables.scss' as *;
 @use '../../styles/type-sets.scss' as *;
+@use '../../styles/margin.scss' as *;
 
 .About {
   background-color: $color-primary-dark;
 
   &__wrapper {
+    @include page-margin();
     padding: $spacing-100;
   }
 
