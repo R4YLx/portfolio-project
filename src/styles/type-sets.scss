@@ -8,9 +8,7 @@
   letter-spacing: $letter-spacing-100;
 
   @media screen and (min-width: $breakpoint-md) {
-  }
-
-  @media screen and (min-width: $breakpoint-lg) {
+    font-size: $font-size-1100;
   }
 }
 
@@ -19,12 +17,6 @@
   font-weight: $font-weight-light;
   line-height: $line-height-100;
   letter-spacing: $letter-spacing-100;
-
-  @media screen and (min-width: $breakpoint-md) {
-  }
-
-  @media screen and (min-width: $breakpoint-lg) {
-  }
 }
 
 @mixin headline-sm {
@@ -32,12 +24,6 @@
   font-weight: $font-weight-semibold;
   line-height: $line-height-100;
   letter-spacing: $letter-spacing-100;
-
-  @media screen and (min-width: $breakpoint-md) {
-  }
-
-  @media screen and (min-width: $breakpoint-lg) {
-  }
 }
 
 // Mixins for body text
@@ -46,9 +32,6 @@
   font-weight: $font-weight-extralight;
   line-height: $line-height-75;
   letter-spacing: $letter-spacing-100;
-
-  @media screen and (min-width: $breakpoint-md) {
-  }
 }
 
 @mixin body-lg {
@@ -56,9 +39,6 @@
   font-weight: $font-weight-extralight;
   line-height: $line-height-75;
   letter-spacing: $letter-spacing-100;
-
-  @media screen and (min-width: $breakpoint-md) {
-  }
 }
 
 @mixin body-md {
@@ -66,9 +46,6 @@
   font-weight: $font-weight-light;
   line-height: $line-height-300;
   letter-spacing: $letter-spacing-300;
-
-  @media screen and (min-width: $breakpoint-md) {
-  }
 }
 
 @mixin body-sm {
@@ -76,9 +53,6 @@
   font-weight: $font-weight-medium;
   line-height: $line-height-200;
   letter-spacing: $letter-spacing-400;
-
-  @media screen and (min-width: $breakpoint-md) {
-  }
 }
 
 @mixin body-xs {
@@ -86,7 +60,4 @@
   font-weight: $font-weight-light;
   line-height: $line-height-200;
   letter-spacing: $letter-spacing-200;
-
-  @media screen and (min-width: $breakpoint-md) {
-  }
 }
