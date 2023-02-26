@@ -36,6 +36,11 @@
     gap: $spacing-400;
     margin-top: $spacing-200;
     margin-bottom: $spacing-400;
+
+    @media screen and (min-width: $breakpoint-xl) {
+      flex-direction: row;
+      align-items: flex-start;
+    }
   }
 
   &__subHeadline {
@@ -46,6 +51,11 @@
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: $spacing-200;
+
+    @media screen and (min-width: $breakpoint-xl) {
+      width: 100%;
+      order: -1;
+    }
   }
 
   &__badge {

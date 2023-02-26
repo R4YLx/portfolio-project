@@ -19,6 +19,12 @@
 
   @media screen and (min-width: $breakpoint-lg) {
     padding-inline: $spacing-600;
+    justify-content: flex-start;
+    gap: $spacing-900;
+  }
+
+  @media screen and (min-width: $breakpoint-xl) {
+    gap: $spacing-1100;
   }
 
   &__logo {

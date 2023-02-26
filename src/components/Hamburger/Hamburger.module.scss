@@ -9,6 +9,10 @@
   transition: all 0.3s ease-in-out;
   position: relative;
 
+  @media screen and (min-width: $breakpoint-lg) {
+    display: none;
+  }
+
   &__bars {
     /* The middle bar */
     width: $spacing-200;
