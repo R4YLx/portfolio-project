@@ -3,7 +3,7 @@
 
 .NavMenu {
   position: fixed;
-  inset: 0 0 0 30%;
+  inset: 0 0 0 40%;
   padding-top: $spacing-400;
   transform: translateX(100%);
   transition: all 0.3s ease-in-out;
@@ -11,6 +11,10 @@
   background: hsla(253, 55%, 42%, 0.542);
   backdrop-filter: blur(0.5rem);
   -webkit-backdrop-filter: blur(0.5rem);
+
+  @media screen and (min-width: $breakpoint-md) {
+    inset: 0 0 0 60%;
+  }
 
   &[active] {
     transform: translateX(0%);
