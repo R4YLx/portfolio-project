@@ -9,6 +9,7 @@
   &__textWrapper {
     @include page-margin();
     padding-top: $spacing-500;
+    padding-inline: $spacing-100;
 
     @media screen and (min-width: $breakpoint-md) {
       padding-top: $spacing-1000;
