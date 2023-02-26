@@ -7,4 +7,16 @@
     margin-inline: $spacing-600;
     padding-inline: 0;
   }
+
+  @media screen and (min-width: $breakpoint-lg) {
+    margin-inline: $spacing-1400;
+  }
+
+  @media screen and (min-width: $breakpoint-xl) {
+    margin-inline: $spacing-2000;
+  }
+
+  @media screen and (min-width: $breakpoint-xxl) {
+    margin-inline: $spacing-2500;
+  }
 }
