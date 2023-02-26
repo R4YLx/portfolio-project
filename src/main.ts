@@ -42,6 +42,22 @@ hamburgerBtnEl.addEventListener('click', () => {
   })
 })
 
+//* Closes hamburger menu when you click outside of menu element
+document.addEventListener('click', (e: Event) => {
+  const target = e.target as HTMLElement
+
+  if (
+    target.id !== 'hamburgerBtn' &&
+    target.id !== 'hamburgerBars' &&
+    target.id !== 'menu' &&
+    target.dataset.menu !== ''
+  ) {
+    hamburgerBtnEl.removeAttribute('active')
+    hamburgerBtnEl.removeAttribute('open')
+    menuEl.removeAttribute('active')
+  }
+})
+
 //* Scroll event for parallax effect
 const parallaxLayer1El = dqs('#parallaxLayer1') as HTMLDivElement
 const parallaxLayer2El = dqs('#parallaxLayer2') as HTMLDivElement

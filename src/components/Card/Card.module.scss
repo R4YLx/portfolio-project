@@ -23,6 +23,7 @@
     width: 100%;
     object-fit: cover;
     margin-top: $spacing-100;
+    border-radius: $spacing-50;
   }
 
   &__headline {
@@ -54,7 +55,7 @@
       transition: all 0.3s ease;
 
       &:hover {
-        transform: scale(1.125);
+        transform: scale(1.05);
         color: $color-secondary-light;
         border-color: $color-secondary-light;
         transition: all 0.3s ease;
@@ -67,12 +68,11 @@
       background: $color-secondary-dark;
       color: $color-base-light;
       filter: drop-shadow(0);
-      font-weight: bold;
       transition: all 0.3s ease;
 
       &:hover {
         background: $color-secondary-light;
-        transform: scale(1.125);
+        transform: scale(1.05);
         filter: drop-shadow(0 10px 5px rgba(0, 0, 0, 0.125));
         transition: all 0.3s ease;
       }

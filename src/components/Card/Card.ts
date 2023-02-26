@@ -1,7 +1,6 @@
 import styles from './Card.module.scss'
 
 function Card(project: IProject) {
-  console.log('project', project)
   const containerEl = document.createElement('div')
   containerEl.className = styles.Card
 
