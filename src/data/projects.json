@@ -39,7 +39,7 @@
     "project_title": "Battleship",
     "project_img": "./images/battleship.png",
     "project_link": "https://github.com/R4YLx/battleships-client",
-    "project_deploy": "https://8bit-battleship.netlify.app/"
+    "project_deploy": "https://battleship-fed21.netlify.app/"
   },
   {
     "project_id": "star-wars",
