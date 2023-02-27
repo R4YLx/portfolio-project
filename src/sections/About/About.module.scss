@@ -7,7 +7,8 @@
 
   &__wrapper {
     @include page-margin();
-    padding: $spacing-100;
+    padding-inline: $spacing-100;
+    padding-block: $spacing-250;
   }
 
   &__headline {

@@ -6,10 +6,6 @@
   font-weight: $font-weight-extralight;
   line-height: $line-height-75;
   letter-spacing: $letter-spacing-100;
-
-  @media screen and (min-width: $breakpoint-md) {
-    font-size: $font-size-1100;
-  }
 }
 
 @mixin headline-md {
