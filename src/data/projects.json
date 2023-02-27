@@ -53,6 +53,6 @@
     "project_title": "Kill The Virus",
     "project_img": "./images/ktv.png",
     "project_link": "https://github.com/R4YLx/ktv",
-    "project_deploy": "https://kill-the-virus-jrs.herokuapp.com/"
+    "project_deploy": "https://ktv-production.up.railway.app/"
   }
 ]
